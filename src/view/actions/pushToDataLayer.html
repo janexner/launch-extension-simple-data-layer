@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Action</title>
+  </head>
+  <body>
+    
+
+    <script src="https://assets.adobedtm.com/activation/reactor/extensionbridge/extensionbridge.min.js"></script>
+    <script>
+      window.extensionBridge.register({
+        init: function(info) {
+          if (info.settings) {
+            // TODO
+          }
+        },
+
+        getSettings: function() {
+          return {
+              'eventName': 'Manual Data Layer Push',
+              'id': 'test',
+              'payload': {
+                  'level': 1,
+                  'super': 'na klar'
+              }
+          }
+        },
+
+        validate: function() {
+          return true; // TODO
+        }
+      });
+    </script>
+  </body>
+</html>

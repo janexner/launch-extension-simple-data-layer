@@ -1,0 +1,59 @@
+{
+  "displayName": "Simple Data Layer Helper",
+  "name": "ags055-simple-data-layer-helper",
+  "platform": "web",
+  "version": "1.0.2",
+  "description": "Provides helpers for work with an EDDL data layer on your pages and SPAs",
+  "author": {
+    "name": "Adobe Consulting - Jan Exner",
+    "email": "jexner@adobe.com"
+  },
+  "main": "src/lib/main.js",
+  "viewBasePath": "src/view/",
+  "iconPath": "resources/icons/logo.svg",
+  "configuration": {
+    "viewPath": "configuration/configuration.html",
+    "schema": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "properties": {}
+    }
+  },
+  "events": [
+    {
+      "displayName": "Data Layer Change",
+      "name": "data-layer-change",
+      "schema": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "type": "object",
+        "properties": {}
+      },
+      "libPath": "src/lib/events/dataLayerChange.js"
+    }
+  ],
+  "actions": [
+    {
+      "displayName": "Push to Data Layer",
+      "name": "push-to-data-layer",
+      "schema": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "type": "object",
+        "properties": {}
+      },
+      "libPath": "src/lib/actions/pushToDataLayer.js",
+      "viewPath": "actions/pushToDataLayer.html"
+    }
+  ],
+  "dataElements": [
+    {
+      "displayName": "Computed State",
+      "name": "computed-state",
+      "schema": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "type": "object",
+        "properties": {}
+      },
+      "libPath": "src/lib/dataElements/computedState.js"
+    }
+  ]
+}
